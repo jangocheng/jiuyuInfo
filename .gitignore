@@ -41,3 +41,5 @@ nbdist/
 !*/build/*.java
 !*/build/*.html
 !*/build/*.xml
+!/jiuyuInfo-weixin/jiuyuInfo-weixin.iml
+/jiuyuInfo-weixin/jiuyuInfo-weixin.iml
