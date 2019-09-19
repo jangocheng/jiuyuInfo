@@ -38,8 +38,8 @@ public class JiuyuInfoApplication {
         //http://127.0.0.1:8888/silence/swagger-ui.html
         StringBuilder sb = new StringBuilder();
         sb.append("\r\n======================================================================\r\n");
-        sb.append("\r\n            (♥◠‿◠)ﾉﾞ  JiuYvInfo启动成功   ლ(´ڡ`ლ)ﾞ  \r\n");
-        sb.append("\r\n    欢迎使用 " + Global.getName() + "  - JiuYvInfo.Version : 4.0.0.RELEASE\r\n");
+        sb.append("\r\n            (♥◠‿◠)ﾉﾞ  JiuYuInfo启动成功   ლ(´ڡ`ლ)ﾞ  \r\n");
+        sb.append("\r\n    欢迎使用 " + Global.getName() + "  - JiuYuInfo.Version : 4.0.0.RELEASE\r\n");
         sb.append("\r\n======================================================================\r\n");
         System.out.println(sb.toString());
         System.out.println("\tloginUrl:    " + loginUrl);

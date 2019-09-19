@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 粉丝信息Controller
- * 
+ *
  * @author jiuyuInfo
  * @date 2019-09-18
  */

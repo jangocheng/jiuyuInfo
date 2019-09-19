@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////
 
 ${AnsiColor.GREEN}      :: Spring  Boot ::             (v${spring-boot.version})
-${AnsiColor.GREEN}      :: JiuYvInfo    ::             (v${jiuyuInfo.version}.RELEASE)
+${AnsiColor.GREEN}      :: JiuYuInfo    ::             (v${jiuyuInfo.version}.RELEASE)
 
 
 ${AnsiColor.BLACK}
