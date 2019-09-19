@@ -229,7 +229,8 @@
 		<module>jiuyuInfo-quartz</module>
 		<module>jiuyuInfo-generator</module>
         <module>jiuyuInfo-common</module>
-    </modules>
+		<module>jiuyuInfo-weixin</module>
+	</modules>
     <packaging>pom</packaging>
 
 

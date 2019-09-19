@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2019-09-18 17:59:59
+Date: 2019-09-19 10:55:42
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -44,7 +44,7 @@ CREATE TABLE `fans` (
 -- ----------------------------
 -- Records of fans
 -- ----------------------------
-INSERT INTO `fans` VALUES ('3d335ce1a3ae49faa291b2e25d3df0fg', 'oJIGa0YmAZ_Xv0rGBMj8GdqfLWad', '顺流', '男', '中国', '湖北', '武汉', 'http://thirdwx.qlogo.cn/mmopen/7bouSxQ4eM22TPqtZZ7OyEHhKPgPk4AzBfmLTc4oGtfEtDAzg1PcuALnHfjjuPKWPSscicjpSPYBtwpUZg4FSm4XsEjg3lxJia/132', 'c4efe630b966415e875dfad8dafe8127', '逆流', '13027178292', '1', '2018-06-27 00:00:00', '0', '2019-09-18', '18:49:56', 'admin', 'admin');
+INSERT INTO `fans` VALUES ('3d335ce1a3ae49faa291b2e25d3df0fg', 'oJIGa0YmAZ_Xv0rGBMj8GdqfLWad', '顺流', '男', '中国', '湖北', '武汉', 'http://thirdwx.qlogo.cn/mmopen/7bouSxQ4eM22TPqtZZ7OyEHhKPgPk4AzBfmLTc4oGtfEtDAzg1PcuALnHfjjuPKWPSscicjpSPYBtwpUZg4FSm4XsEjg3lxJia/132', 'c4efe630b966415e875dfad8dafe8127', '曹大大', '13027178292', '1', '2018-06-27 00:00:00', '0', '2019-09-19', '18:49:56', 'admin', 'admin');
 
 -- ----------------------------
 -- Table structure for gen_table
@@ -380,7 +380,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('jiuyuInfoScheduler', 'DESKTOP-JBFTEEM1568800717023', '1568800751626', '15000');
+INSERT INTO `qrtz_scheduler_state` VALUES ('jiuyuInfoScheduler', 'DESKTOP-JBFTEEM1568861679762', '1568861682734', '15000');
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -457,9 +457,9 @@ CREATE TABLE `qrtz_triggers` (
 -- ----------------------------
 -- Records of qrtz_triggers
 -- ----------------------------
-INSERT INTO `qrtz_triggers` VALUES ('jiuyuInfoScheduler', 'TASK_CLASS_NAME1', 'DEFAULT', 'TASK_CLASS_NAME1', 'DEFAULT', null, '1568800720000', '-1', '5', 'PAUSED', 'CRON', '1568800717000', '0', null, '2', '');
-INSERT INTO `qrtz_triggers` VALUES ('jiuyuInfoScheduler', 'TASK_CLASS_NAME2', 'DEFAULT', 'TASK_CLASS_NAME2', 'DEFAULT', null, '1568800725000', '-1', '5', 'PAUSED', 'CRON', '1568800717000', '0', null, '2', '');
-INSERT INTO `qrtz_triggers` VALUES ('jiuyuInfoScheduler', 'TASK_CLASS_NAME3', 'DEFAULT', 'TASK_CLASS_NAME3', 'DEFAULT', null, '1568800720000', '-1', '5', 'PAUSED', 'CRON', '1568800717000', '0', null, '2', '');
+INSERT INTO `qrtz_triggers` VALUES ('jiuyuInfoScheduler', 'TASK_CLASS_NAME1', 'DEFAULT', 'TASK_CLASS_NAME1', 'DEFAULT', null, '1568861680000', '-1', '5', 'PAUSED', 'CRON', '1568861679000', '0', null, '2', '');
+INSERT INTO `qrtz_triggers` VALUES ('jiuyuInfoScheduler', 'TASK_CLASS_NAME2', 'DEFAULT', 'TASK_CLASS_NAME2', 'DEFAULT', null, '1568861685000', '-1', '5', 'PAUSED', 'CRON', '1568861680000', '0', null, '2', '');
+INSERT INTO `qrtz_triggers` VALUES ('jiuyuInfoScheduler', 'TASK_CLASS_NAME3', 'DEFAULT', 'TASK_CLASS_NAME3', 'DEFAULT', null, '1568861680000', '-1', '5', 'PAUSED', 'CRON', '1568861680000', '0', null, '2', '');
 
 -- ----------------------------
 -- Table structure for sys_config
@@ -671,7 +671,7 @@ CREATE TABLE `sys_logininfor` (
   `msg` varchar(255) DEFAULT '' COMMENT '提示消息',
   `login_time` datetime DEFAULT NULL COMMENT '访问时间',
   PRIMARY KEY (`info_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=127 DEFAULT CHARSET=utf8 COMMENT='系统访问记录';
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8 COMMENT='系统访问记录';
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -703,6 +703,14 @@ INSERT INTO `sys_logininfor` VALUES ('123', 'admin', '127.0.0.1', '内网IP', 'C
 INSERT INTO `sys_logininfor` VALUES ('124', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '退出成功', '2019-09-18 17:52:24');
 INSERT INTO `sys_logininfor` VALUES ('125', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-18 17:52:25');
 INSERT INTO `sys_logininfor` VALUES ('126', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-18 17:58:48');
+INSERT INTO `sys_logininfor` VALUES ('127', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-18 18:05:12');
+INSERT INTO `sys_logininfor` VALUES ('128', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-19 09:36:50');
+INSERT INTO `sys_logininfor` VALUES ('129', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '退出成功', '2019-09-19 09:39:13');
+INSERT INTO `sys_logininfor` VALUES ('130', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-19 09:41:07');
+INSERT INTO `sys_logininfor` VALUES ('131', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-19 09:42:56');
+INSERT INTO `sys_logininfor` VALUES ('132', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-19 09:54:37');
+INSERT INTO `sys_logininfor` VALUES ('133', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-19 10:41:51');
+INSERT INTO `sys_logininfor` VALUES ('134', 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', '0', '登录成功', '2019-09-19 10:46:29');
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -860,7 +868,7 @@ CREATE TABLE `sys_oper_log` (
   `error_msg` varchar(2000) DEFAULT '' COMMENT '错误消息',
   `oper_time` datetime DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=utf8 COMMENT='操作日志记录';
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8 COMMENT='操作日志记录';
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -877,6 +885,8 @@ INSERT INTO `sys_oper_log` VALUES ('108', '用户管理', '2', 'com.jiuyuInfo.we
 INSERT INTO `sys_oper_log` VALUES ('109', '角色管理', '2', 'com.jiuyuInfo.web.controller.system.SysRoleController.editSave()', 'POST', '1', 'admin', '研发部门', '/jiuyuInfo/system/role/edit', '127.0.0.1', '内网IP', '{\r\n  \"roleId\" : [ \"2\" ],\r\n  \"roleName\" : [ \"普通角色\" ],\r\n  \"roleKey\" : [ \"common\" ],\r\n  \"roleSort\" : [ \"2\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"普通角色\" ],\r\n  \"menuIds\" : [ \"2000,2001\" ]\r\n}', '0', null, '2019-09-18 17:38:01');
 INSERT INTO `sys_oper_log` VALUES ('110', '菜单管理', '2', 'com.jiuyuInfo.web.controller.system.SysMenuController.editSave()', 'POST', '1', 'admin', '研发部门', '/jiuyuInfo/system/menu/edit', '127.0.0.1', '内网IP', '{\r\n  \"menuId\" : [ \"2001\" ],\r\n  \"parentId\" : [ \"2000\" ],\r\n  \"menuType\" : [ \"C\" ],\r\n  \"menuName\" : [ \"微信粉丝管理\" ],\r\n  \"url\" : [ \"/business/fans\" ],\r\n  \"target\" : [ \"menuItem\" ],\r\n  \"perms\" : [ \"business:fans:view,business:fans:list\" ],\r\n  \"orderNum\" : [ \"1\" ],\r\n  \"icon\" : [ \"fa fa-blind\" ],\r\n  \"visible\" : [ \"0\" ]\r\n}', '0', null, '2019-09-18 17:38:52');
 INSERT INTO `sys_oper_log` VALUES ('111', '菜单管理', '2', 'com.jiuyuInfo.web.controller.system.SysMenuController.editSave()', 'POST', '1', 'admin', '研发部门', '/jiuyuInfo/system/menu/edit', '127.0.0.1', '内网IP', '{\r\n  \"menuId\" : [ \"2001\" ],\r\n  \"parentId\" : [ \"2000\" ],\r\n  \"menuType\" : [ \"C\" ],\r\n  \"menuName\" : [ \"微信粉丝管理\" ],\r\n  \"url\" : [ \"/business/fans\" ],\r\n  \"target\" : [ \"menuItem\" ],\r\n  \"perms\" : [ \"business:fans:view,business:fans:list,business:fans:edit\" ],\r\n  \"orderNum\" : [ \"1\" ],\r\n  \"icon\" : [ \"fa fa-blind\" ],\r\n  \"visible\" : [ \"0\" ]\r\n}', '0', null, '2019-09-18 17:52:21');
+INSERT INTO `sys_oper_log` VALUES ('112', '个人信息', '2', 'com.jiuyuInfo.web.controller.system.SysProfileController.updateAvatar()', 'POST', '1', 'admin', '研发部门', '/jiuyuInfo/system/user/profile/updateAvatar', '127.0.0.1', '内网IP', '{ }', '0', null, '2019-09-18 18:06:02');
+INSERT INTO `sys_oper_log` VALUES ('113', '粉丝信息', '2', 'com.jiuyuInfo.business.controller.FansController.editSave()', 'POST', '1', 'admin', '研发部门', '/jiuyuInfo/business/fans/edit', '127.0.0.1', '内网IP', '{\r\n  \"openId\" : [ \"oJIGa0YmAZ_Xv0rGBMj8GdqfLWad\" ],\r\n  \"nickName\" : [ \"顺流\" ],\r\n  \"sex\" : [ \"\" ],\r\n  \"country\" : [ \"中国\" ],\r\n  \"province\" : [ \"湖北\" ],\r\n  \"city\" : [ \"武汉\" ],\r\n  \"headimgurl\" : [ \"http://thirdwx.qlogo.cn/mmopen/7bouSxQ4eM22TPqtZZ7OyEHhKPgPk4AzBfmLTc4oGtfEtDAzg1PcuALnHfjjuPKWPSscicjpSPYBtwpUZg4FSm4XsEjg3lxJia/132\" ],\r\n  \"unionid\" : [ \"c4efe630b966415e875dfad8dafe8127\" ],\r\n  \"realName\" : [ \"曹大大\" ],\r\n  \"phone\" : [ \"13027178292\" ],\r\n  \"isSubscribe\" : [ \"1\" ],\r\n  \"subscribe\" : [ \"2018-06-27\" ],\r\n  \"deleted\" : [ \"0\" ]\r\n}', '0', null, '2019-09-19 09:37:15');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -994,7 +1004,7 @@ CREATE TABLE `sys_user` (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES ('1', '103', 'admin', '管理员', '00', 'ry@163.com', '15888888888', '1', '', '29c67a30398638269fe600f73a054934', '111111', '0', '0', '127.0.0.1', '2019-09-18 17:58:49', 'admin', '2018-03-16 11:33:00', 'ry', '2019-09-18 17:58:49', '管理员');
+INSERT INTO `sys_user` VALUES ('1', '103', 'admin', '管理员', '00', 'ry@163.com', '15888888888', '1', '/profile/avatar/2019/09/18/55b14c5fe018ec00d2c3c8661c580509.png', '29c67a30398638269fe600f73a054934', '111111', '0', '0', '127.0.0.1', '2019-09-19 10:46:29', 'admin', '2018-03-16 11:33:00', 'ry', '2019-09-19 10:46:29', '管理员');
 INSERT INTO `sys_user` VALUES ('2', '105', 'ry', '若依', '00', 'ry@qq.com', '15666666666', '1', '', '8e6d98b90472783cc73c17047ddccf36', '222222', '0', '0', '127.0.0.1', '2019-09-18 17:41:44', 'admin', '2018-03-16 11:33:00', 'ry', '2019-09-18 17:41:44', '测试员');
 
 -- ----------------------------
@@ -1019,7 +1029,7 @@ CREATE TABLE `sys_user_online` (
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('2ac40adf-e2ea-47de-a27a-e28f77d1d08a', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-18 17:52:25', '2019-09-18 17:58:49', '1800000');
+INSERT INTO `sys_user_online` VALUES ('f7fa2faf-5a03-4baa-917b-f2e75129fa51', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-09-19 10:41:49', '2019-09-19 10:46:29', '1800000');
 
 -- ----------------------------
 -- Table structure for sys_user_post
